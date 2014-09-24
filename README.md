@@ -46,6 +46,27 @@ the debuggee VM handle in for our REPL session.
 
 ## Examples
 
+### Fibonacci
+
+First off, let's start with something simple: Fibonacci numbers. In the examples
+project, in `fibonacci.clj`, there's a particularly brain-dead implementation of
+a function to calculate the `nth` Fibonacci number. We're going to trace its
+execution (logging function entry and exit).
+
+In the REPL session of the debugger (the `bugger-it` project):
+```
+bugger-it.core=> (bugger-it.repl/trace-fn d 'bugger-it-examples.fibonacci/stupid-fib)
+[#<MethodEntryRequestImpl method entry request  (enabled)> #<MethodExitRequestImpl method exit request (enabled)>]
+```
+
+Now, in the REPL session of the debuggee (the examples project):
+```
+bugger-it-examples.core=> (load "fibonacci")
+nil
+bugger-it-examples.core=> (bugger-it-examples.fibonacci/stupid-fib 6)
+8
+```
+
 So, let's run Rich Hickey's "ants" demo. In the REPL session of the debuggee
 (the examples project):
 ```
