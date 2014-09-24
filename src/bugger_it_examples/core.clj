@@ -13,5 +13,3 @@
   []
   (load "fibonacci")
   (use 'bugger-it-examples.fibonacci))
-
-
