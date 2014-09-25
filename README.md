@@ -2,7 +2,7 @@
 
 **Very much a work in progress --- please be patient!**
 
-See [`bugger-it`](https://githug.com/samroberton/bugger-it) for details. This
+See [`bugger-it`](https://github.com/samroberton/bugger-it) for details. This
 project is a collection of introductory examples for `bugger-it`, to get you
 going and hopefully convince you that `bugger-it` is worth trying out. The idea
 is to run some code in the `bugger-it-examples` project while debugging it from
@@ -12,7 +12,7 @@ a separate JVM process running `bugger-it`.
 
 Download from https://github.com/samroberton/bugger-it-examples.
 
-You'll also need [bugger-it](https://githug.com/samroberton/bugger-it) for this
+You'll also need [bugger-it](https://github.com/samroberton/bugger-it) for this
 to be of any use to you at all.
 
 ## Usage
